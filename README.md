@@ -87,9 +87,9 @@ python "vehicle detection + mqtt.py"
 
 The script starts the webcam, detects yellow license plates, and publishes the plate text to the MQTT broker.
 Press q to quit.
-#Run the ESP32 Script:
-#Upload esp32.py to the ESP32 and run it.
-#The ESP32 connects to Wi-Fi, subscribes to the MQTT topic, and displays received license plates on the LCD.
+Run the ESP32 Script:
+Upload esp32.py to the ESP32 and run it.
+The ESP32 connects to Wi-Fi, subscribes to the MQTT topic, and displays received license plates on the LCD.
 
 
 ##Operation:

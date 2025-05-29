@@ -96,23 +96,23 @@ Press q to quit.
 The vehicle detection script processes the webcam feed, detects yellow plates, extracts text, and sends it via MQTT.
 The ESP32 receives the MQTT messages and updates the LCD with the license plate number.
 
-#Notes
+##Notes
 Ensure both scripts use the same MQTT_TOPIC for communication.
 The vehicle detection script is optimized for yellow license plates. Adjust the HSV range (lower_yellow, upper_yellow) for other plate colors.
 The LCD display truncates plates longer than 16 characters to fit the 16x2 display.
 The system uses the public test.mosquitto.org broker for testing. For production, use a secure, private MQTT broker.
 
-#Troubleshooting
+##Troubleshooting
 Camera not detected: Check if the webcam is connected and accessible (cv2.VideoCapture(0)).
 Tesseract errors: Verify the TESSERACT_PATH and ensure Tesseract is installed.
 MQTT connection issues: Confirm the broker address, port, and internet connectivity.
 ESP32 Wi-Fi failure: Double-check WIFI_SSID and WIFI_PASSWORD.
 LCD not displaying: Verify I2C connections and address (I2C_ADDR).
 
-#License
+##License
 This project is licensed under the MIT License.
 
-#Acknowledgments
+##Acknowledgments
 OpenCV for image processing.
 Tesseract OCR for text recognition.
 Paho MQTT and umqtt.simple for MQTT communication.
